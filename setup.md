@@ -178,5 +178,13 @@ pipeline {
 sudo chmod 777 /var/run/docker.sock
 ```
 - now build the pipelie 1 by clicking on "build now"
+![Screenshot 2025-06-11 213133](https://github.com/user-attachments/assets/6025400a-9800-4054-af94-970f512e2944)
+
+![Screenshot 2025-06-11 213431](https://github.com/user-attachments/assets/bf748094-5055-452c-be7c-380c831cef14)
+
+- Now map the instance IP address with ``:8081`` port number on browser.
+- **NOTE : make sure that you allow ``8081`` port number in instance security group**
+![Screenshot 2025-06-11 214527](https://github.com/user-attachments/assets/9124ff63-d779-4cbf-b7eb-115f57b60618)
+
 
 
