@@ -100,7 +100,7 @@ Docker Commons
   - install automatically
   - version : select jdk -17.0.11 +9 
 - add SonarQube-scanner
-  -  name: sonr-scanner
+  -  name: sonar-scanner
   -  install automatically
   -  version: default version.
 - add Nodejs
@@ -139,7 +139,7 @@ pipeline {
 
         stage('Code-Pull') {
             steps {
-                git branch: 'main', url: 'https://github.com/abhipraydhoble//Project-Netflix-Clone.git'
+                git branch: 'main', url: 'https://github.com/abhipraydhoble/Project-Netflix-Clone.git'
             }
         }
         stage("Sonarqube Analysis") {
@@ -175,8 +175,6 @@ pipeline {
 - apply and save
 - run the following commands to give permission to user to create  the containers
 ```
-sudo usermod -aG docker jenkins
-newgrp docker
 sudo chmod 777 /var/run/docker.sock
 ```
 - now build the pipelie 1 by clicking on "build now"
